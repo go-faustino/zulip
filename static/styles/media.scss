@@ -5,6 +5,9 @@
 
 /* This max-width must be synced with message_viewport.is_narrow */
 @media (max-width: 1165px) {
+    .search_closed .fa-search {
+        right: 99px;
+    }
     .screen-full-show {
         display: none !important;
     }
@@ -177,6 +180,22 @@
     }
 }
 
+@media (max-width: 775px) {
+    body.night-mode {
+        #searchbox,
+        #searchbox_legacy {
+            // prevents overlap with streamlist toggle button.
+            position: relative;
+        }
+        .search_closed {
+            .fa-search {
+                // prevents overlap of search icon with gear icon caused  by position:relative of search_box
+                right: 129px;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     /* Override Bootstrap's responsive grid to display input at full width */
     .input-append .stream-list-filter {
@@ -208,6 +227,10 @@
     .compose_private_button,
     .compose_reply_button {
         padding: 5px 10px 5px 10px;
+    }
+
+    .search_closed .fa-search {
+        top: 5px;
     }
 
     #streamlist-toggle,
