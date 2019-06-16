@@ -177,8 +177,6 @@ exports.initialize = function () {
         // really it would be OK if they did).
 
         setTimeout(function () {
-            var search_string = narrow_state.search_string();
-            search_query_box.val(search_string);
             exports.update_button_visibility();
         }, 100);
     });

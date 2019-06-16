@@ -266,6 +266,8 @@ exports.exit_search = function () {
         }
     } else {
         // just changing the ui (and not redirecting)
+        var search_string = narrow_state.search_string();
+        $("#search_query").val(search_string);
         exports.toggle_search_or_nav();
     }
 };
