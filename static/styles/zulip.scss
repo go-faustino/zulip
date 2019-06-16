@@ -1842,6 +1842,11 @@ a:hover code {
             @media (max-width: 500px) {
                 display: none;
             }
+            .emoji {
+                width: 15px;
+                height: 15px;
+                padding-bottom: 1px;
+            }
         }
 
         .root {
