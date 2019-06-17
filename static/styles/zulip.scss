@@ -1793,6 +1793,10 @@ a:hover code {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
         }
 
         li.sub_count,
@@ -1857,6 +1861,9 @@ a:hover code {
                 &:hover {
                     color: hsl(0, 0%, 0%);
                 }
+            }
+            .settings_link {
+                color: inherit;
             }
         }
     }
