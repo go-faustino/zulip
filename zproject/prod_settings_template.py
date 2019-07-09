@@ -421,7 +421,22 @@ EMAIL_GATEWAY_IMAP_FOLDER = "INBOX"
 # optionally using LDAP as an authentication mechanism.
 
 import ldap
-from django_auth_ldap.config import LDAPSearch
+from django_auth_ldap.config import (LDAPSearch,
+                                     LDAPSearchUnion,
+                                     LDAPGroupType,
+                                     PosixGroupType,
+                                     MemberDNGroupType,
+                                     NestedMemberDNGroupType,
+                                     GroupOfNamesType,
+                                     NestedGroupOfNamesType,
+                                     GroupOfUniqueNamesType,
+                                     NestedGroupOfUniqueNamesType,
+                                     ActiveDirectoryGroupType,
+                                     NestedActiveDirectoryGroupType,
+                                     OrganizationalRoleGroupType,
+                                     NestedOrganizationalRoleGroupType,
+                                     LDAPGroupQuery)
+
 
 ########
 # LDAP integration, part 1: Connecting to the LDAP server.
